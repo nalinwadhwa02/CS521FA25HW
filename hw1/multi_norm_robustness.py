@@ -618,7 +618,7 @@ def hw3_adverserial_training():
         test_loader,
         attack_type="linf",
         eps=8 / 255,
-        num_epochs=10,
+        num_epochs=1,
         lr=learning_rate,
         save_path="models/adv_trained_linf.pth",
     )
