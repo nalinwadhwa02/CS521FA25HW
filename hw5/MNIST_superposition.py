@@ -319,7 +319,7 @@ def run_experiment(bottleneck_dim, epochs=20):
 # Smaller bottleneck = more pressure for superposition
 results = {}
 
-for bottleneck_dim in [8, 16, 32]:
+for bottleneck_dim in [16, 32, 64]:
     model, analysis, decoder_analysis = run_experiment(bottleneck_dim, epochs=20)
     results[bottleneck_dim] = {
         'model': model,
